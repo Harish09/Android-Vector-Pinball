@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Harish/Desktop/Vector-Pinball-master/app/build/intermediates/res/merged/debug/xml/preferences_nomultitouch.xml",
+        "source": "/Users/Harish/Desktop/Vector-Pinball-master/app/src/main/res/xml/preferences_nomultitouch.xml"
+    },
+    {
+        "merged": "/Users/Harish/Desktop/Vector-Pinball-master/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/Harish/Desktop/Vector-Pinball-master/app/src/main/res/xml/preferences.xml"
+    }
+]

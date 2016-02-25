@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dozingcatsoftware.bouncy"
+    android:installLocation="auto"
+    android:versionCode="18"
+    android:versionName="1.5.3" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="21" />
+
+    <!-- android:theme="@style/Theme.AppCompat" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.VPTheme" >
+        <activity
+            android:name="com.dozingcatsoftware.bouncy.BouncyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dozingcatsoftware.bouncy.AboutActivity" />
+        <activity android:name="com.dozingcatsoftware.bouncy.BouncyPreferences" />
+    </application>
+
+</manifest>
