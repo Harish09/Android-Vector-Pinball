@@ -68,7 +68,7 @@ public class BouncyActivity extends Activity {
         FieldLayout.setContext(this);
         this.level = getInitialLevel();
         field.resetForLevel(this, level);
-        field.setAudioPlayer(new VPSoundpool.Player());
+        //field.setAudioPlayer(new VPSoundpool.Player());
 
         canvasFieldView = (CanvasFieldView)findViewById(R.id.canvasFieldView);
         glFieldView = (GLFieldView)findViewById(R.id.glFieldView);
@@ -106,8 +106,8 @@ public class BouncyActivity extends Activity {
         updateFromPreferences();
 
         // Initialize audio, loading resources in a separate thread.
-        VPSoundpool.initSounds(this);
-        (new AsyncTask<Void, Void, Void>() {
+        //VPSoundpool.initSounds(this);
+        /*(new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... params) {
                 VPSoundpool.loadSounds();
@@ -115,7 +115,7 @@ public class BouncyActivity extends Activity {
             }
         }).execute();
 
-        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);*/
     }
 
     @Override public void onResume() {
@@ -242,8 +242,8 @@ public class BouncyActivity extends Activity {
             }
         }
 
-        useZoom = prefs.getBoolean("zoom", true);
-        fieldViewManager.setZoom(useZoom ? 1.4f : 1.0f);
+        //useZoom = prefs.getBoolean("zoom", false);
+        //fieldViewManager.setZoom(useZoom ? 1.4f : 1.0f);
 
         VPSoundpool.setSoundEnabled(prefs.getBoolean("sound", true));
         VPSoundpool.setMusicEnabled(prefs.getBoolean("music", true));

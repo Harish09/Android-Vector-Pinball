@@ -13,6 +13,7 @@ public class AboutActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.about);
 
    // annaunivlogo=(ImageView)findViewById(R.id.imageView);
      //   annaunivlogo.setImageResource(R.drawable.annaunivlogo);
