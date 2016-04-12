@@ -1,8 +1,7 @@
 package com.dozingcatsoftware.bouncy;
 
 public interface AudioPlayer {
-
-    void playStart();
+void playStart();
 
     void playBall();
 
